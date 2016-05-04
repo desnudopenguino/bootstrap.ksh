@@ -23,7 +23,7 @@ else
 		cd /home/$user
 		echo "ENTER: get bootstrap.bak to download local config files\n"
 		box 
-		echo "Decript bootstrap.bak...\n"
+		echo "Decrypt bootstrap.bak to bootstrap.zip...\n"
 		dec bootstrap.bak bootstrap.zip
 		echo "Unzipping bootstrap.zip...\n"
 		unzip bootstrap.zip

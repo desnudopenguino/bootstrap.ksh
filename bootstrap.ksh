@@ -17,12 +17,11 @@ else
 		cd dotfiles
 		echo "Installing dotfiles...\n"
 		./install.sh
-		echo "Sourcing .kshrc...\n"
-		. .kshrc
 		echo "Getting work/project specific files...\n"
 		cd /home/$user
+		echo "Getting the rest of the files...\n"
 		echo "ENTER: get bootstrap.bak to download local config files\n"
-		box 
+		box
 		echo "Decrypt bootstrap.bak to bootstrap.zip...\n"
 		dec bootstrap.bak bootstrap.zip
 		echo "Unzipping bootstrap.zip...\n"

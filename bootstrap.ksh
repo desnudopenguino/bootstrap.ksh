@@ -20,4 +20,5 @@ echo "Unzipping bootstrap.zip...\n"
 unzip bootstrap.zip
 echo "Sourcing .profile...\n"
 . .profile
-echo "Finished (hopefully). Now you can do it all!\n\n"
+echo "Finished (hopefully). Now you can do it all!\n"
+echo "NOTE: You must enable sudo on this account, and if you want the xconsole removed, you must comment it out in (/etc/X11/xdm/Xsetup_0)\n\n"

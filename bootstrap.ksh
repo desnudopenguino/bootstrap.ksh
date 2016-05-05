@@ -2,7 +2,7 @@
 
 echo "Bootstrap.ksh - tweaks some settings and bootstraps dotfiles and other files needed for my development environment in OpenBSD\n"
 echo "SUing into root to install packages...\n"
-su root -c 'pkg_add -Im sudo vim git i3 ranger pcmanfm irssi feh compton firefox iridium thunderbird gimp inkscape zip unzip bitlbee xpdf ranger rxvt-unicode scrot wget expect cadaver; vim /etc/X11/xdm/Xsetup_0 -c "%s/xconsole/\#xconsole" -c "wq"; visudo; exit'
+su root -c 'pkg_add -zm sudo vim git i3 ranger pcmanfm irssi feh compton firefox iridium thunderbird gimp inkscape zip unzip bitlbee xpdf ranger rxvt-unicode scrot wget expect cadaver; vim /etc/X11/xdm/Xsetup_0 -c "%s/xconsole/\#xconsole" -c "wq"; visudo; exit'
 cd ~
 echo "Cloning dotfiles from desnudopenguion/dotfiles...\n"
 git clone https://github.com/desnudopenguino/dotfiles.git dotfiles

@@ -11,6 +11,8 @@ echo "Installing dotfiles...\n"
 ./install.sh
 echo "Getting work/project specific files...\n"
 cd ~
+echo "Sourcing .kshrc...\n"
+. .kshrc
 echo "Getting the rest of the files...\n"
 echo "ENTER: get bootstrap.bak to download local config files\n"
 box
@@ -21,4 +23,3 @@ unzip bootstrap.zip
 echo "Sourcing .profile...\n"
 . .profile
 echo "Finished (hopefully). Now you can do it all!\n"
-echo "NOTE: You must enable sudo on this account, and if you want the xconsole removed, you must comment it out in (/etc/X11/xdm/Xsetup_0)\n\n"
